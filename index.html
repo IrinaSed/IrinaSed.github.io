@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Email form</title>
+	<style>
+   div {text-align:center;}
+   td {text-align: center;}
+  </style>
+</head>
+<body>
+	<div class="content">
+		<img src="mail.jpg" alt="У вас не отображаются картинки"
+		style="height:15%; width:15%;">
+		<form action="/enter/" name="form">
+			<h1>Почта @Irina</h1>
+			<label for="user">Имя пользователя:</label>
+			<div class="i-block i-login">
+				<input type="text" id="user" name="user">
+			</div>
+			<label for="password">Пароль:</label>
+			<div class="i-block i-password">
+				<input type="password" id="password" name="password">
+			</div>
+			<div>
+				<a href="https://mail.e1.ru/recovery/">
+					Забыли пароль?
+				</a>
+			</div>
+			<div>
+				<input type="submit" value="Войти">
+			</div> 
+		</form>
+		<p>Нет почтового ящика на @Irina.ru?
+			<a href="reg.html" target="_blank">Создать сейчас!</a>
+		</p>
+	</div>
+</body>
+</html>
