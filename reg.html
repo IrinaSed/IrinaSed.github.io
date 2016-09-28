@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Сreate Email</title>
+	<style>
+   div {text-align:center;}
+   td {text-align: left;}
+   h4 {text-align: center;}
+   table {margin: auto;}
+   </style>
+</head>
+<body>
+	<div>
+		<img src="mail.jpg" alt="У вас не отображаются картинки"
+		style="height:15%; width:15%; ">
+		<form action="/enter/" name="form">
+			<h1 style="text-align:center;">Регестрация почтового ящика @irina.ru</h1>
+			<table>
+				<tr>
+					<td colspan="3"><h4>Адрес и пароль</h4></td>
+				</tr>
+				<tr>
+					<td><label>Email:</label></td>
+					<td><input type="text" name="username"></td>
+					<td><label>@Irina.ru</label></td>
+				</tr>
+				<tr>
+					<td><label>Пароль:</label></td>
+					<td><input type="password" name="createpassword"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><label>Повтарите пароль:</label></td>
+					<td><input type="password" name="repitpassword"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="3"><h4>Если вы забудете пароль</h4></td>
+				</tr>
+				<tr>
+					<td><label>Выберите вопрос:</label></td>
+					<td>
+						<select name="quest_id">
+							<option value="0">--Выберите вопрос--</option>
+							<option value="1">Девичья фамилия вашей мамы</option>
+							<option value="2">Номер паспорта</option>
+							<option value="3">Номер группы в университете</option>
+							<option value="4">ЛЛюбимый цвет</option>
+						</select>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><label>Или задайте свой:</label></td>
+					<td><input type="text" name="ownquest"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><label>Ответ:</label></td>
+					<td><input type="text" name="ownanswer"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="3"><h4>Информация о пользователе</h4></td>
+				</tr>
+				<tr>
+					<td><label>Имя:</label></td>
+					<td><input type="text" name="Name"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><label>Фамилия:</label></td>
+					<td><input type="text" name="surname"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><label>Дата Рождения:</label></td>
+					<td style="width:30px">
+						<select name="day">
+							<option value="0">-</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+						</select>
+						<select name="month">
+							<option value="0">-</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+						<select>
+							<option value="0">-</option>
+							<option value="2009">2009</option>
+							<option value="2008">2008</option>
+							<option value="2007">2007</option>
+							<option value="2006">2006</option>
+							<option value="2005">2005</option>
+							<option value="2004">2004</option>
+							<option value="2003">2003</option>
+							<option value="2002">2002</option>
+							<option value="2001">2001</option>
+							<option value="2000">2000</option>
+							<option value="1999">1999</option>
+							<option value="1998">1998</option>
+						</select>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><label>Ваш пол:</label></td>
+					<td>
+						<input type="radio" name="sex" value="m">Мужской
+						<input type="radio" name="sex" value="f">Женский
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="3" style="text-align:center;">
+						<input type="submit" value="Зарегестрироваться">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
