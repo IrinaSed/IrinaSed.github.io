@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>For print</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<style type="text/css">
+		.passportu{width:500px; 
+							 border:1px, solid, gray;
+							 background: #808080;
+							 padding: 50px;
+							 text-align: center;
+    					 margin:auto;}
+		.passportu img {max-width: 400px}
+			@media print{
+			body{background: none}
+			
+			a{color: black !important; text-decoration: none; }
+			a[href^="http://"]:after {content:" <"attr(href) ">";}
+			h2, h3 { page-break-before: always;}		
+			img {max-width: 100% !important;}
+		}
+		a[href$=".JPG"]{ color:red;}
+	</style>
+</head>
+<body style="background-image: url(backgr.jpg)">
+	<a href="http://urfu.ru">Ссылка</a>
+		<div class="passportu">
+			<img src="1.JPG" alt="*">
+			<p style="color:black;">Под ней бетон очень гладкий – такой гладкий, что, по словам Владимира Пузанкова, британцы даже остались недовольны: в Екатеринбурге он получился слишком идеальным, а все неровности, пузырьки воздуха и каверны роднили бы его с естественными материалами. Технология называется "честный бетон". Такой вот сейчас подход в британской архитектуре.</p>
+		</div>
+		<a href="2.JPG">Вертолёт</a>
+		<img src="2.JPG" alt="*">
+		<h2 style="text-align: center">Заголовок в конце файла при печати</h2>
+		<h6>Не остается на предыдущей странице</h6>
+	
+</body>
+</html>
+<!--
+	Design for Master
+	ссылки картинки и сделать версию для печати
+	
+-->
+
