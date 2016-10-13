@@ -1,0 +1,88 @@
+<!--сгененрировать таблицу, кот програмно может быть отсортирована по какой то таблице
+Либо пользователь внёс вручную
+
+
+Доработать генерацию квадратиков window. setinterval(generate, 10000)
+анимация чтобы ездили, и дойдя до конца края ехали в обратую стороны двигались в направлении как бильярдные шары
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div.main {
+			max-width: 1000px;
+			max-height: 1000px;
+		}
+		@-webkit-keyframes go-left-right {
+			from {
+				left: 0px;
+			}
+			to {
+				left: calc(100%-50px);
+			}
+		}
+
+		@-webkit-keyframes go-top-down {
+			from {
+				top: 0px;
+			}
+			to {
+				bottom: calc(100%-50px);
+			}
+		}
+		div.direction2 {
+			 -webkit-animation: go-left-right 3s infinite alternate;
+			 	position: relative;
+		    width: 50px;
+		    height: 20px;
+		}
+
+		div.direction1 {
+			-webkit-animation: go-top-down 3s infinite alternate;
+			position: relative;
+			width: 50px;
+		  height: 20px;
+		}
+
+	</style>
+	<script type="text/javascript">
+		function draw(rec)
+		{
+			document.body.appendChild(rec);
+		};
+
+		function div(){
+			for (var i = 0; i < 10; i++)
+			{
+				var rec = document.createElement("div");
+				direction = 2* Math.random() > 1 ? 2 : 1; 
+				rec.setAttribute('class','direction'+ direction.toString());
+				var width = 100 * Math.random();
+				rec.style.width = width.toString()+"px";
+				var height = 100 * Math.random();
+				rec.style.height = height.toString()+"px";
+				
+				rec.style.left = (window.screen.width*Math.random()).toString()+"px";
+				rec.style.top = (window.screen.height*Math.random()).toString()+"px";
+				rec.style.backgroundColor =  "rgb("+Math.round(256*Math.random()) +", "+Math.round(256*Math.random()) +", "+Math.round(256*Math.random())+")";
+				
+				draw (rec);	
+
+			}
+			window.setinterval(draw, 100)
+		};
+
+		
+		
+	</script>
+</head>
+<body onload="div()">
+	
+</body>
+</html>
