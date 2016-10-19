@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events</title>
+</head>
+<body onkeydown="press(window.event)">
+    <script>
+        var key = "PASSWORD";
+        var temp = '';
+        function press(event) {
+            if (temp.length === 2*(key.length)) {
+                temp = temp.slice(1);
+            }
+            var char = String.fromCharCode(event.keyCode);
+            temp += char;
+            if ((temp.toUpperCase()).indexOf(key) !== -1) {
+                alert("You press password");
+                temp = '';
+                animation();
+            }
+        }
+        function animation() {
+            var x = document.createElement("IMG");
+            x.setAttribute("src", "1.jpg");
+            x.setAttribute("alt", "The Pulpit Rock");
+            document.body.appendChild(x);
+        }
+    </script>
+</body>
+</html>
