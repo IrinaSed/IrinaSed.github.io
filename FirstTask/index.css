@@ -1,0 +1,107 @@
+@font-face
+{
+    font-family: Dpark;
+    src: url(Fonts/dpark.ttf);
+}
+
+
+body
+{
+    background: url(Images/background.jpg);
+    width: auto;
+}
+
+.content
+{
+    display: inline-block;
+    border-color: grey;
+    width: 100%;
+
+}
+
+div.my-name
+{
+    display: inline-block;
+    position: absolute;
+    width: 98%;
+    height: 90%;
+    text-align: center;
+}
+
+p.my-name
+{
+    border: 3px coral;
+    display: inline-block;
+    margin-top: 18%;
+    font: 5em Dpark;
+    line-height: 120%;
+    color: azure;
+}
+
+div.menu
+{
+    background-color: brown;
+    position: absolute;
+    color: azure;
+    top: 48%;
+    right: -75px;
+    width: 5%;
+    border: 2px solid aquamarine;
+
+}
+
+div.menu
+{
+    width: 200px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+div.menu {
+    -moz-transform: rotate(-90deg); /* Для Firefox */
+    -ms-transform: rotate(-90deg); /* Для IE */
+    -webkit-transform: rotate(-90deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-90deg); /* Для Opera */
+    transform: rotate(-90deg);
+}
+
+ul{
+    list-style:none;
+    position:absolute;
+    right: 9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
+    opacity:0; /* Устанавливаем начальное состояние прозрачности */
+    -webkit-transition:0.25s linear opacity; /* В Webkit выпадающие пункты будут проявляться */
+}
+
+ul li
+{
+    float: right;
+    margin: 0;
+    padding: 10px 0;
+    width: 170px;
+    text-align: center;
+    border: 3px solid grey;
+}
+
+div.content-meny:hover .ascent-menu ul
+{
+    top: 20px;
+    right: 0;
+    opacity: 1;
+    height: 90%;
+    width: 135px;
+    color: aqua;
+    background-color: aliceblue;
+}
+
+li:hover
+{
+    background:#333;
+    background:rgba(51,51,51,0.75); /* Будет полупрозрачным */
+}
+
+li:hover a
+{
+    color: azure;
+}

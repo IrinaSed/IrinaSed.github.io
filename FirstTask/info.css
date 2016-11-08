@@ -1,0 +1,36 @@
+.info
+{
+    display: inline-block;
+}
+
+.my-photo
+{
+    display: inline-block;
+    width: 300px;
+    margin: 0 100px 0 50px;
+}
+
+.my-photo img
+{
+    width: 300px;
+}
+
+.info-about-me
+{
+    display: inline-block;
+    width: 300px;
+    margin: 0 50px;
+}
+
+.contact-info
+{
+    display: inline-block;
+    width: 300px;
+    margin: 0 50px;
+}
+.contact-info a
+{
+    color: azure;
+}
+
+
