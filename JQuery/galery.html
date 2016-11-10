@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Galery</title>
+	<script type="text/javascript" src="http://yandex.st/jquery/2.0.3/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".press a").click(function(){
+		$(".large").attr({ src: $(this).attr("href")});
+		return false;
+	});	
+});
+</script>
+<style type="text/css">
+	img 
+	{
+		width: 19%;
+	}
+
+	.large
+	{
+		width: 80%;
+		padding: 0 10%;
+	}
+	
+	p.header
+	{
+		font-size: 30px;
+		text-align: center;
+	}
+
+</style>
+
+</head>
+<body>
+<p class="header">Галерея</p>
+
+<p><img class="large" src="1.jpg" alt="Large image" /></p>
+
+<p class="press">
+	<a href="1.jpg"><img src="1.jpg" /></a>
+	<a href="2.jpg"><img src="2.jpg" /></a>
+	<a href="3.jpg"><img src="3.jpg" /></a>
+	<a href="4.jpg"><img src="4.jpg" /></a>
+	<a href="5.jpg"><img src="5.jpg" /></a>
+</p>
+
+</body>
+</html>
