@@ -1,7 +1,9 @@
 .info
 {
     display: inline-block;
+    width: 100%;
     color: #edd5ff;
+    overflow-x: hidden;
 }
 
 .my-photo
@@ -14,11 +16,18 @@
 .my-photo img
 {
     width: 300px;
+    text-align: left;
+}
+
+.my-photo
+{
+    text-align: left;
 }
 
 .info-about-me
 {
     display: inline-block;
+    text-align: left;
     width: 300px;
     margin: 0 50px;
 }
@@ -26,12 +35,15 @@
 .contact-info
 {
     display: inline-block;
+    text-align: left;
     width: 300px;
     margin: 0 50px;
 }
-.contact-info a
+.contact-info a,
+.info-about-me a
 {
     color: azure;
+    font-size: large;
 }
 
 
