@@ -41,7 +41,7 @@ p.my-name
 div.menu
 {
     background-color: brown;
-    position: absolute;
+    position: fixed;
     color: azure;
     top: 48%;
     right: -75px;
