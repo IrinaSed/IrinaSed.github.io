@@ -68,7 +68,7 @@ div.menu {
 
 ul{
     list-style:none;
-    position:absolute;
+    position:fixed;
     right: 9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
     opacity:0; /* Устанавливаем начальное состояние прозрачности */
     -webkit-transition:0.25s linear opacity; /* В Webkit выпадающие пункты будут проявляться */
